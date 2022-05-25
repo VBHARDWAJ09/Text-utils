@@ -47,3 +47,11 @@ header h2{
   font-size: 2rem;
   text-align: center;
 }
+.dark{
+  background-color: black;
+  color: white;
+}
+.light{
+background-color: white;
+color: black;
+}
