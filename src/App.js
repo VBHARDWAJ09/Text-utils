@@ -1,7 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
-import About from './components/About';
 import Alert from './components/Alert';
 import { useState } from 'react';
 import Title from './components/Title';
@@ -13,7 +12,7 @@ import {
 } from "react-router-dom";
 ;
 function App() {
-  const [mode, setMode] = useState('dark');
+  const [mode, setMode] = useState('light');
   const [alert, setAlert] = useState(null);
 
 
@@ -50,9 +49,6 @@ function App() {
             <div className="container my-4">
               <TextForm showAlert={showAlert} heading="Enter the text to analyse below  " mode={mode} />
             </div>
-          </Route>
-          <Route exactpath="/about">
-            <About mode={mode}  />
           </Route>
         </Switch>
       </Router>
